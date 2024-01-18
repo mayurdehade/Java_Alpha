@@ -1,0 +1,38 @@
+#JDBC (Java Database Connectivity)
+-> JDBC stands for Java Database Connectivity. It is a standard API 
+provided by oracle for Java application to interact with different set of databases.
+
+( Java APP -> JDBC -> Database )
+API -> Predefined classes and interfaces in java
+Java stores data with some time of instance and if we stop running of code
+then it is changes and no longer stored in memory for save data permanently
+we use database and for connect database to Java App JDBC is interface.
+
+
+//Add jar file 
+Right click on your project.
+Select Build Path.
+Click on Configure Build Path.
+Click on Libraries and select Add External JARs.
+Select the jar file from the required folder.
+Click and Apply and Ok.
+
+//Load external drivers
+Class.forName('com.mysql.cj.jdbc.Driver');
+
+//JDBC required try and catch
+
+//Database URL
+Open MySQL workbench
+In MySQL connection right click on local instance
+select option copy JDBC connection string to clip board
+update database name in url (user?root) 
+
+
+//createStatement
+
+
+//preparedStatement
+It is more useful than create statement.
+It use for insert multiple values in database.
+It not compile again and again;
